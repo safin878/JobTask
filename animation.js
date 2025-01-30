@@ -1,3 +1,27 @@
+let tl = gsap.timeline();
+
+tl.from(".vh", {
+  opacity: 0,
+  duration: 1,
+  x: -500,
+  delay: 0.1,
+});
+tl.from(".orp", {
+  opacity: 0,
+  duration: 0.8,
+  x: 500,
+});
+tl.from(".di", {
+  opacity: 0,
+  duration: 0.8,
+  x: -500,
+});
+tl.from(".dimg", {
+  opacity: 0,
+  duration: 0.8,
+  y: 500,
+});
+
 gsap.from(".c2", {
   opacity: 0,
   duration: 2,
