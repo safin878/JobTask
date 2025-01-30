@@ -1,0 +1,129 @@
+// .app-bar {
+//   position: static;
+//   background-color: #0c30ae;
+//   color: #ffffff;
+//   // padding: 0.5rem 1rem;
+
+//   // border-bottom: 1px #fff solid;
+
+//   .toolbar {
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     justify-content: space-between;
+
+//     .side {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       gap: 30px;
+//     }
+
+//     .menu-icon {
+//       background: none;
+//       border: none;
+//       color: inherit;
+//       font-size: 1.5rem;
+//       margin-right: 1rem;
+//       cursor: pointer;
+
+//       &:hover {
+//         color: #bbdefb; // Slight hover effect
+//       }
+//     }
+//     .menu {
+//       width: 60px;
+//     }
+
+//     .title {
+//       width: 100px;
+//       height: 60.879px;
+//       padding: 0.5rem;
+//       padding-bottom: 60px;
+//       flex-shrink: 0;
+//       border-right: 1px #fff solid;
+//     }
+//   }
+// }
+// .custom-line {
+//   border-top: 1px solid #ffffff; /* White line, adjust color as needed */
+
+//   width: 80%; /* Full width */
+// }
+
+.app-bar {
+  position: static;
+  background-color: #0c30ae;
+  color: #ffffff;
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+    .side {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu-icon {
+      background: none;
+      border: none;
+      color: inherit;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: #bbdefb; // Slight hover effect
+      }
+    }
+    .menu {
+      width: 60px;
+    }
+
+    .title {
+      width: 100px;
+      height: 60.879px;
+      padding: 0.5rem;
+      padding-bottom: 60px;
+      flex-shrink: 0;
+      border-right: 1px #fff solid;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .toolbar {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .side {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.custom-line {
+  border-top: 1px solid #ffffff; /* White line, adjust color as needed */
+  width: 85%; /* Full width */
+}
+
+.custom-line2 {
+  width: 1px; /* Thin vertical line */
+  height: 150px; /* Adjust height as needed */
+  background-color: #ffffff; /* White line, adjust color */
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.custom-line3 {
+  width: 1px; /* Thin vertical line */
+  height: 150px; /* Adjust height as needed */
+  background-color: #ffffff; /* White line, adjust color */
+  margin-left: 10px;
+  margin-right: 10px;
+}

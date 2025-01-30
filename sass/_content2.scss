@@ -1,0 +1,60 @@
+.content2 {
+  background-color: #19ec60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .cImg2 {
+    width: 200.029px;
+    height: 150.024px;
+    border-radius: 0px 118.5px 118.5px 82px;
+  }
+  .c1 {
+    color: #041c0c;
+
+    font-family: "Hagrid Text Trial";
+    // font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 200px; /* 105.263% */
+    text-transform: uppercase;
+
+    .c2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      transform: translate(-400px, 45px);
+    }
+    .let {
+      font-size: 100px;
+    }
+    .c2i {
+      width: 100px;
+    }
+  }
+
+  .work {
+    font-size: 150px;
+  }
+  .to {
+    font-size: 110px;
+    transform: translate(-300px, -45px);
+  }
+  .stampD {
+    .stamp {
+      position: absolute;
+      right: 0px;
+      bottom: 8%;
+      z-index: 1;
+      width: 150px;
+      transform: translate(-450%, -110%);
+    }
+    .email {
+      position: absolute;
+      right: 0px;
+      bottom: 8%;
+      transform: translate(-230%, -60%);
+      z-index: 1;
+    }
+  }
+}

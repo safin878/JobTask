@@ -1,0 +1,140 @@
+@import "font";
+
+@mixin flexIteam($space) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space;
+}
+
+@mixin common {
+  color: #fff;
+
+  font-family: "Hagrid Text Trial";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.content1 {
+  background-color: #0c30ae;
+  padding: 10px;
+  //   max-height: 20%;
+  display: flex;
+  //   position: relative; /* Ensure the child element's position is relative to this */
+  //   overflow: hidden; /* Prevent scroll bars from appearing */
+  //   width: 100%; /* Adjust the width as needed */
+  //   height: 100%;
+  .image {
+    max-width: 400px;
+    margin-top: 100px;
+  }
+
+  .next {
+    transform: translate(-350px, 0px);
+  }
+
+  .dot {
+    transform: translate(-170px, 0px);
+  }
+
+  .head {
+    background-color: #19ec60;
+    height: 7%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: 45deg;
+    // transform: translate(150px, -50px);
+    transform: translate(20%, -50%);
+    .ui {
+      color: #041c0c;
+      font-family: "Bingar DEMO";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    .um {
+      max-width: 100px;
+    }
+  }
+  .headline {
+    transform: translate(1000px, -106px);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 30%;
+  }
+
+  .vh {
+    @include flexIteam(5px);
+
+    .vision {
+      @include common;
+      font-size: 70px;
+      transform: translate(-750px);
+    }
+    .high {
+      @include common;
+      font-size: 13px;
+      transform: translate(-750px, 10px);
+    }
+  }
+  .orp {
+    @include flexIteam(10px);
+    transform: translate(-250px, 25px);
+    .our {
+      @include flexIteam(5px);
+      @include common;
+      transform: translate(-250px, -10px);
+      font-size: 120px;
+
+      .flower {
+        width: 20%;
+      }
+    }
+    .sp {
+      color: #adbcf0;
+      font-family: "Bingar DEMO";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transform: translate(-200px, -20px);
+    }
+  }
+
+  .di {
+    transform: translate(-300px);
+    .desing {
+      @include common;
+      margin-left: 10px;
+    }
+    .info {
+      @include common;
+      @include flexIteam(0px);
+      font-size: 15px;
+    }
+  }
+  .imag {
+    width: 100px;
+    height: 117.036px;
+    border-radius: 30px;
+  }
+  .dimg {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+}

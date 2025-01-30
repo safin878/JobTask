@@ -1,0 +1,129 @@
+// .footer {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   background-color: #e5e7eb;
+//   color: #1f2937;
+//   padding: 2.5rem;
+
+//   &-aside {
+//     flex: 1;
+//     margin-bottom: 1.5rem;
+
+//     .footer-logo {
+//       fill: currentColor;
+//       margin-bottom: 1rem;
+//     }
+//     p {
+//       margin: 0;
+//       font-size: 0.9rem;
+//     }
+//   }
+
+//   &-nav {
+//     flex: 1;
+//     min-width: 150px;
+
+//     .footer-title {
+//       font-size: 1rem;
+//       font-weight: bold;
+//       margin-bottom: 1rem;
+//     }
+
+//     .footer-link {
+//       display: block;
+//       margin-bottom: 0.5rem;
+//       font-size: 0.9rem;
+//       color: inherit;
+//       text-decoration: none;
+
+//       &:hover {
+//         color: #3b82f6; // Change on hover
+//       }
+//     }
+//   }
+// }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #151c02;
+  color: #fff;
+  padding: 2.5rem;
+
+  &-aside {
+    flex: 1;
+    margin-bottom: 1.5rem;
+
+    .footer-logo {
+      fill: currentColor;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+
+  &-nav {
+    flex: 1;
+    min-width: 150px;
+    .ft {
+      color: #fff;
+
+      font-family: "Hagrid Text Trial";
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 25px; /* 128.571% */
+      text-transform: uppercase;
+    }
+
+    .footer-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .footer-link {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: #3b82f6; // Change on hover
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    &-aside,
+    &-nav {
+      flex: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.nl {
+  display: inline-flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.br {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  transform: translate(350px);
+}

@@ -1,0 +1,18 @@
+@import "navbar";
+@import "footer";
+@import "content1";
+@import "content2";
+@import "font";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative; /* Ensure the child element's position is relative to this */
+  overflow-x: hidden; /* Prevent scroll bars from appearing */
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;
+}

@@ -1,0 +1,411 @@
+.app-bar {
+  position: static;
+  background-color: #0c30ae;
+  color: #ffffff;
+}
+.app-bar .toolbar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.app-bar .toolbar .side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.app-bar .toolbar .menu-icon {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.app-bar .toolbar .menu-icon:hover {
+  color: #bbdefb;
+}
+.app-bar .toolbar .menu {
+  width: 60px;
+}
+.app-bar .toolbar .title {
+  width: 100px;
+  height: 60.879px;
+  padding: 0.5rem;
+  padding-bottom: 60px;
+  flex-shrink: 0;
+  border-right: 1px #fff solid;
+}
+@media (max-width: 768px) {
+  .app-bar .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .app-bar .toolbar .side {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.custom-line {
+  border-top: 1px solid #ffffff; /* White line, adjust color as needed */
+  width: 85%; /* Full width */
+}
+
+.custom-line2 {
+  width: 1px; /* Thin vertical line */
+  height: 150px; /* Adjust height as needed */
+  background-color: #ffffff; /* White line, adjust color */
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.custom-line3 {
+  width: 1px; /* Thin vertical line */
+  height: 150px; /* Adjust height as needed */
+  background-color: #ffffff; /* White line, adjust color */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #151c02;
+  color: #fff;
+  padding: 2.5rem;
+}
+.footer-aside {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+.footer-aside .footer-logo {
+  fill: currentColor;
+  margin-bottom: 1rem;
+}
+.footer-aside p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.footer-nav {
+  flex: 1;
+  min-width: 150px;
+}
+.footer-nav .ft {
+  color: #fff;
+  font-family: "Hagrid Text Trial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 25px; /* 128.571% */
+  text-transform: uppercase;
+}
+.footer-nav .footer-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer-nav .footer-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: inherit;
+  text-decoration: none;
+}
+.footer-nav .footer-link:hover {
+  color: #3b82f6;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-aside, .footer-nav {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.nl {
+  display: inline-flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.br {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  transform: translate(350px);
+}
+
+@font-face {
+  font-family: "Hagrid Trial Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Trial Regular"), url("Hagrid-Regular-trial.woff") format("woff");
+}
+@font-face {
+  font-family: "Hagrid Trial Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Trial Italic"), url("Hagrid-Italic-trial.woff") format("woff");
+}
+@font-face {
+  font-family: "Hagrid Text Trial Extrabold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Text Trial Extrabold Italic"), url("Hagrid-Text-Extrabold-Italic-trial.woff") format("woff");
+}
+@font-face {
+  font-family: "Hagrid Text Trial Extrabold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Text Trial Extrabold"), url("Hagrid-Text-Extrabold-trial.woff") format("woff");
+}
+.content1 {
+  background-color: #0c30ae;
+  padding: 10px;
+  display: flex;
+}
+.content1 .image {
+  max-width: 400px;
+  margin-top: 100px;
+}
+.content1 .next {
+  transform: translate(-350px, 0px);
+}
+.content1 .dot {
+  transform: translate(-170px, 0px);
+}
+.content1 .head {
+  background-color: #19ec60;
+  height: 7%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 45deg;
+  transform: translate(20%, -50%);
+}
+.content1 .head .ui {
+  color: #041c0c;
+  font-family: "Bingar DEMO";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.content1 .head .um {
+  max-width: 100px;
+}
+.content1 .headline {
+  transform: translate(1000px, -106px);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 30%;
+}
+.content1 .vh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.content1 .vh .vision {
+  color: #fff;
+  font-family: "Hagrid Text Trial";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 70px;
+  transform: translate(-750px);
+}
+.content1 .vh .high {
+  color: #fff;
+  font-family: "Hagrid Text Trial";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 13px;
+  transform: translate(-750px, 10px);
+}
+.content1 .orp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transform: translate(-250px, 25px);
+}
+.content1 .orp .our {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  font-family: "Hagrid Text Trial";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  transform: translate(-250px, -10px);
+  font-size: 120px;
+}
+.content1 .orp .our .flower {
+  width: 20%;
+}
+.content1 .orp .sp {
+  color: #adbcf0;
+  font-family: "Bingar DEMO";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: translate(-200px, -20px);
+}
+.content1 .di {
+  transform: translate(-300px);
+}
+.content1 .di .desing {
+  color: #fff;
+  font-family: "Hagrid Text Trial";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.content1 .di .info {
+  color: #fff;
+  font-family: "Hagrid Text Trial";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  font-size: 15px;
+}
+.content1 .imag {
+  width: 100px;
+  height: 117.036px;
+  border-radius: 30px;
+}
+.content1 .dimg {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.content2 {
+  background-color: #19ec60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content2 .cImg2 {
+  width: 200.029px;
+  height: 150.024px;
+  border-radius: 0px 118.5px 118.5px 82px;
+}
+.content2 .c1 {
+  color: #041c0c;
+  font-family: "Hagrid Text Trial";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 200px; /* 105.263% */
+  text-transform: uppercase;
+}
+.content2 .c1 .c2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: translate(-400px, 45px);
+}
+.content2 .c1 .let {
+  font-size: 100px;
+}
+.content2 .c1 .c2i {
+  width: 100px;
+}
+.content2 .work {
+  font-size: 150px;
+}
+.content2 .to {
+  font-size: 110px;
+  transform: translate(-300px, -45px);
+}
+.content2 .stampD .stamp {
+  position: absolute;
+  right: 0px;
+  bottom: 8%;
+  z-index: 1;
+  width: 150px;
+  transform: translate(-450%, -110%);
+}
+.content2 .stampD .email {
+  position: absolute;
+  right: 0px;
+  bottom: 8%;
+  transform: translate(-230%, -60%);
+  z-index: 1;
+}
+
+@font-face {
+  font-family: "Hagrid Trial Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Trial Regular"), url("Hagrid-Regular-trial.woff") format("woff");
+}
+@font-face {
+  font-family: "Hagrid Trial Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Trial Italic"), url("Hagrid-Italic-trial.woff") format("woff");
+}
+@font-face {
+  font-family: "Hagrid Text Trial Extrabold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Text Trial Extrabold Italic"), url("Hagrid-Text-Extrabold-Italic-trial.woff") format("woff");
+}
+@font-face {
+  font-family: "Hagrid Text Trial Extrabold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hagrid Text Trial Extrabold"), url("Hagrid-Text-Extrabold-trial.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative; /* Ensure the child element's position is relative to this */
+  overflow-x: hidden; /* Prevent scroll bars from appearing */
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */
